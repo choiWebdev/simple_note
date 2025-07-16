@@ -1,38 +1,81 @@
+/* ================= 테마 전역 스타일 ================= */
+/* Light Mode */
+:root {
+  --absolute-color: #fff;
+  --background-color: #f7f7f7;
+  --text-color: #222222;
+  --object-color: #dddddd;
+}
+
+/* Dark Mode */
+.dark_mode {
+  --absolute-color: #000;
+  --background-color: #222222;
+  --text-color: #f7f7f7;
+  --object-color: #333333;
+}
+
+/* ================= 리셋 CSS ================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0 2rem;
+  font-size: 10px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+input,
+textarea,
+button,
+select,
+option {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* ================= 고정 스타일 ================= */
 .App {
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  margin: 10vh auto;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  background-color: var(--absolute-color);
+}
+
+.btn_style {
+  min-width: 10rem;
+  padding: 1.4rem 2rem;
+  background-color: #2562d3;
+  color: #f7f7f7;
   text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.theme_switch {
+  width: 80rem;
+  padding: 4px;
+  background-color: var(--background-color);
+  border-radius: 80rem;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme_switch .mode_icon {
+  
 }
