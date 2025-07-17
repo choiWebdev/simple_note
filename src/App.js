@@ -1,10 +1,20 @@
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/Header";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  let darkMode = isDarkMode ? "dark_mode" : "";
+  function toggleMode() {
+    setIsDarkMode(!isDarkMode);
+  }
+  useEffect(() => {
+    console.log(isDarkMode);
+
+  }, [isDarkMode]);
   return (
-    <div className="App">
-      <header className="App-header">header</header>
-      <button className="btn_style">버튼</button>
+    <div className={`App ${darkMode}`}>
+      <Header tossToggleMode={toggleMode} />
     </div>
   );
 }

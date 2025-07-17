@@ -1,0 +1,34 @@
+.switch {
+  width: 8rem;
+  padding: .5rem;
+  background-color: var(--background-color);
+  border-radius: 80rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch_ball {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--object-color);
+  position: relative;
+}
+
+.switch .theme_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.switch .theme_icon.dark {
+  left: .8rem;
+}
+
+.switch .theme_icon.light {
+  right: .8rem;
+}
+
+.dark_mode .switch .switch_ball {
+  margin-left: auto;
+}

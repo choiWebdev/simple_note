@@ -7,17 +7,10 @@
   --object-color: #dddddd;
 }
 
-/* Dark Mode */
-.dark_mode {
-  --absolute-color: #000;
-  --background-color: #222222;
-  --text-color: #f7f7f7;
-  --object-color: #333333;
-}
-
 /* ================= 리셋 CSS ================= */
 * {
   box-sizing: border-box;
+  transition: .3s;
 }
 
 html {
@@ -34,6 +27,19 @@ body {
   font-size: 1.6rem;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 input,
 textarea,
 button,
@@ -47,12 +53,26 @@ option {
   background-color: transparent;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dark Mode */
+.dark_mode {
+  --absolute-color: #000;
+  --background-color: #222222;
+  --text-color: #f7f7f7;
+  --object-color: #333333;
+}
+
 /* ================= 고정 스타일 ================= */
 .App {
   width: 100%;
   max-width: 600px;
   height: 80vh;
   margin: 10vh auto;
+  padding-bottom: 2.4rem;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   background-color: var(--absolute-color);
@@ -66,16 +86,4 @@ option {
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;
-}
-
-.theme_switch {
-  width: 80rem;
-  padding: 4px;
-  background-color: var(--background-color);
-  border-radius: 80rem;
-  position: relative;
-}
-
-.theme_switch .mode_icon {
-  
 }
