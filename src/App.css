@@ -2,9 +2,17 @@
 /* Light Mode */
 :root {
   --absolute-color: #fff;
-  --background-color: #f7f7f7;
+  --background-color: #f2f2f2;
   --text-color: #222222;
-  --object-color: #dddddd;
+  --object-color: #bbbbbb;
+}
+
+/* Dark Mode */
+.dark_mode {
+  --absolute-color: #000;
+  --background-color: #222222;
+  --text-color: #f2f2f2;
+  --object-color: #666666;
 }
 
 /* ================= 리셋 CSS ================= */
@@ -13,18 +21,23 @@
   transition: .3s;
 }
 
+::placeholder {
+  color: var(--object-color);
+}
+
 html {
   margin: 0;
   padding: 0 2rem;
   font-size: 10px;
-  color: var(--text-color);
   background-color: var(--background-color);
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Pretendard', sans-serif;
   font-size: 1.6rem;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -51,6 +64,12 @@ option {
   border: none;
   outline: none;
   background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
@@ -58,12 +77,12 @@ a {
   color: inherit;
 }
 
-/* Dark Mode */
-.dark_mode {
-  --absolute-color: #000;
-  --background-color: #222222;
-  --text-color: #f7f7f7;
-  --object-color: #333333;
+.sound_only {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 /* ================= 고정 스타일 ================= */
@@ -76,6 +95,10 @@ a {
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   background-color: var(--absolute-color);
+}
+
+.App_body {
+  padding: 2rem 2.4rem;
 }
 
 .btn_style {

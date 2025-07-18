@@ -1,6 +1,6 @@
 import "../styles/Switch.css";
 
-function Switch({tossToggleMode}) {
+function Switch({ tossToggleMode }) {
   return (
     <div className="switch" onClick={tossToggleMode}>
       <svg
