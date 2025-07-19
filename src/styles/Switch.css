@@ -2,7 +2,7 @@
   width: 8rem;
   padding: .5rem;
   background-color: var(--background-color);
-  border-radius: 80rem;
+  border-radius: 10rem;
   position: relative;
   cursor: pointer;
 }
@@ -13,6 +13,7 @@
   border-radius: 50%;
   background-color: var(--object-color);
   position: relative;
+  transition: transform .3s;
 }
 
 .switch .theme_icon {
@@ -30,5 +31,5 @@
 }
 
 .dark_mode .switch .switch_ball {
-  margin-left: auto;
+  transform: translateX(4rem);
 }

@@ -12,6 +12,8 @@ function List() {
         <Note />
         <Note />
         <Note />
+        <Note />
+        <Note />
       </div>
     </div>
   )
