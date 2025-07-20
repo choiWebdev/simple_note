@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 import Search from "./Search";
 import Note from "./Note";
+import Footer from "./Footer";
 import "../styles/List.css";
 
 function List() {
@@ -15,8 +16,9 @@ function List() {
         <Note />
         <Note />
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default List
+export default List;
