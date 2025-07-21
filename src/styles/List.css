@@ -1,3 +1,7 @@
+.list {
+  padding-bottom: 5.5rem;
+}
+
 .note_list {
   display: flex;
   flex-direction: column;

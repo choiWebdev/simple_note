@@ -4,7 +4,7 @@
   background-color: var(--background-color);
 }
 
-.note .subject {
+.note .title {
   font-size: 2rem;
   margin-bottom: 1.4rem;
 }

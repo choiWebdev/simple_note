@@ -5,7 +5,7 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <Link className="btn_style" to="*">
+      <Link className="btn_style" to="/write">
         글쓰기
       </Link>
     </div>

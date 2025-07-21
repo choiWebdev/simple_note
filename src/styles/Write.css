@@ -1,0 +1,5 @@
+.write .ipt_wrap + .ipt_wrap {
+  margin-top: 1rem;
+}
+
+.ipt_ta {height: calc(80vh - 26rem);}
