@@ -19,6 +19,8 @@
 * {
   box-sizing: border-box;
   transition: background-color .3s, color .3s;
+  margin: 0;
+  padding: 0;
 }
 
 ::placeholder {
@@ -26,28 +28,16 @@
 }
 
 html {
-  margin: 0;
   padding: 0 2rem;
   font-size: 10px;
   background-color: var(--background-color);
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Pretendard', sans-serif;
   font-size: 1.6rem;
   color: var(--text-color);
   line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-ul, ol {
-  margin: 0;
-  padding: 0;
 }
 
 li {
@@ -77,6 +67,10 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+pre {
+  font: inherit;
 }
 
 .sound_only {
@@ -148,6 +142,7 @@ a {
   min-width: 10rem;
   padding: 1.4rem 2rem;
   background-color: #2562d3;
+  font-size: 1.6rem;
   color: #f7f7f7;
   text-align: center;
   line-height: 1;

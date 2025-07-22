@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/Note.css";
 import { Link } from "react-router-dom";
 
-function Note({ poTit, poCon, poId, poNum }) {
+function Note({ poTit, poCon, poId }) {
   return (
     <div className="note">
-      <Link to={`/view/${poNum}`}>
+      <Link to={`/view/${poId}`}>
         <h3 className="title">{poTit}</h3>
-        <div className="content">{poCon}</div>
+        <pre className="content">{poCon}</pre>
       </Link>
     </div>
   );

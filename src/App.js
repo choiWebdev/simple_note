@@ -1,10 +1,11 @@
+import "./App.css";
 import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import List from "./components/List";
 import Write from "./components/Write";
 import View from "./components/View";
-import "./App.css";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   /* 다크 모드 */
@@ -29,7 +30,9 @@ function App() {
         <Routes>
           <Route path="/" element={<List />} />
           <Route path="/write" element={<Write />} />
-          <Route path="/view/:poNum" element={<View />} />
+          <Route path="/modify/:id" element={<Write />} />
+          <Route path="/view/:poId" element={<View />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </div>

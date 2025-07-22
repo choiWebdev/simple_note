@@ -1,21 +1,86 @@
 {
   "numbers": [
-    1
+    {
+      "number": 1
+    },
+    {
+      "number": 2
+    },
+    {
+      "number": 3
+    },
+    {
+      "number": 4
+    },
+    {
+      "id": "a83f",
+      "number": 5
+    },
+    {
+      "id": "2c5b",
+      "number": 6
+    },
+    {
+      "id": "855f",
+      "number": 7
+    },
+    {
+      "id": "9b13",
+      "number": 8
+    }
   ],
   "posts": [
     {
-      "id": "a12e",
-      "number": 1,
+      "id": "1",
+      "code": "a12e",
       "title": "글 제목",
       "content": "글 내용입니다.",
       "date": "2025.07.21 20:00"
     },
     {
-      "id": "a48f",
-      "number": 2,
+      "id": "2",
+      "code": "a48f",
       "title": "테스트1",
       "content": "테스트1 내용\n내용ㅇ",
-      "date": "Mon Jul 21 2025 23:37:05 GMT+0900 (한국 표준시)"
+      "date": "2025-07-22T13:43:37.369Z",
+      "dateString": "2025.7.22 22:43:37"
+    },
+    {
+      "id": "3",
+      "title": "test2",
+      "content": "test2\ntest222222222",
+      "date": "2025-07-22T13:46:46.572Z",
+      "dateString": "2025.7.22 22:46:46"
+    },
+    {
+      "id": "4",
+      "code": "hMPrG",
+      "title": "test3",
+      "content": "test3\n33333333",
+      "date": "Tue Jul 22 2025 16:33:02 GMT+0900 (한국 표준시)"
+    },
+    {
+      "id": "5",
+      "code": "N24OG",
+      "title": "text 444",
+      "content": "4\n444",
+      "date": "Tue Jul 22 2025 17:09:01 GMT+0900 (한국 표준시)"
+    },
+    {
+      "id": "6",
+      "code": "qfcED",
+      "title": "1231",
+      "content": "12314235e",
+      "date": "2025-07-22T13:51:07.895Z",
+      "dateString": "2025.7.22 22:51:7"
+    },
+    {
+      "id": "8",
+      "code": "XtGjw",
+      "title": "seiur2ih",
+      "content": "sklskfㅁ\n3jrh49tuihsokf\nwt3y49itdrklgn;dld",
+      "date": "2025-07-22T13:44:09.048Z",
+      "dateString": "2025.7.22 22:44:9"
     }
   ]
 }
