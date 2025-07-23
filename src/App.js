@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<List />} />
           <Route path="/write" element={<Write />} />
           <Route path="/modify/:id" element={<Write />} />
-          <Route path="/view/:poId" element={<View />} />
+          <Route path="/view/:id" element={<View />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

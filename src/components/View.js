@@ -3,13 +3,13 @@ import useFetch from "../hooks/useFetch";
 import "../styles/View.css";
 
 function View() {
-  const { poId } = useParams();
-  const post = useFetch(`http://localhost:3001/posts/${poId}`);
+  const { id } = useParams();
+  const post = useFetch(`http://localhost:3001/posts/${id}`);
   const navigator = useNavigate();
 
   function deletePost() {
     if (window.confirm("삭제 하시겠습니까?")) {
-      fetch(`http://localhost:3001/posts/${poId}`, {
+      fetch(`http://localhost:3001/posts/${id}`, {
         method: "DELETE",
       })
         .then((res) => {
@@ -34,7 +34,7 @@ function View() {
         <button className="btn_style btn_del" onClick={deletePost}>
           삭제
         </button>
-        <Link className="btn_style btn_mdf" to={`/modify/${poId}`}>
+        <Link className="btn_style btn_mdf" to={`/modify/${id}`}>
           수정
         </Link>
         <Link className="btn_style" to="/">목록</Link>
