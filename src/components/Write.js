@@ -114,8 +114,12 @@ function Write() {
   }
 
   /* 글 작성/수정 취소 */
-  function writeCancel(){
-    if(window.confirm("글 작성이 완료되지 않았습니다. 작성을 취소하고 돌아갈까요?")){
+  function writeCancel() {
+    if (
+      window.confirm(
+        "글 작성이 완료되지 않았습니다. 작성을 취소하고 돌아갈까요?"
+      )
+    ) {
       navigate(-1);
     }
   }
@@ -143,7 +147,11 @@ function Write() {
           />
         </div>
         <div className="btn_wrap">
-          <button className="btn_style btn_del" type="button" onClick={writeCancel}>
+          <button
+            className="btn_style btn_del"
+            type="button"
+            onClick={writeCancel}
+          >
             취소
           </button>
           <button className="btn_style btn_sbm">저장</button>

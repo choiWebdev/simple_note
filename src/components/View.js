@@ -37,6 +37,7 @@ function View() {
         <Link className="btn_style btn_mdf" to={`/modify/${poId}`}>
           수정
         </Link>
+        <Link className="btn_style" to="/">목록</Link>
       </div>
     </>
   );
