@@ -13,7 +13,7 @@ function Search({onSearch}) {
 
   return (
     <div className="search">
-      <form>
+      <form autoComplete="off">
         <input
           className="ipt_sch"
           type="search"

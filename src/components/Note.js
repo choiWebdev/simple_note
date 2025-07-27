@@ -1,14 +1,15 @@
-import React from "react";
 import "../styles/Note.css";
 import { Link } from "react-router-dom";
+import ListMenu from "./ListMenu";
 
-function Note({ poTit, poCon, poId }) {
+function Note({ title, content, id }) {
   return (
     <div className="note">
-      <Link to={`/view/${poId}`}>
-        <h3 className="title">{poTit}</h3>
-        <pre className="content">{poCon}</pre>
+      <Link to={`/view/${id}`}>
+        <h3 className="title">{title}</h3>
+        <pre className="content">{content}</pre>
       </Link>
+      <ListMenu id={id} />
     </div>
   );
 }

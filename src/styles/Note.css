@@ -1,7 +1,12 @@
 .note {
-  padding: 2rem 2.6rem;
   border-radius: 1rem;
   background-color: var(--background-color);
+  position: relative;
+}
+
+.note > a {
+  display: block;
+  padding: 2rem 2.6rem;
 }
 
 .note .title {

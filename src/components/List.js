@@ -7,12 +7,8 @@ import Footer from "./Footer";
 import NoPost from "./NoPost";
 
 function List() {
-  const allPosts = useFetch(
-    `http://localhost:3001/posts?_sort=number&_order=asc`
-  );
+  const allPosts = useFetch(`http://localhost:3001/posts?_sort=-date`);
   const [search, setSearch] = useState();
-
-  // 필터링 함수로 상태 변경 > 상태 배열을 map으로 반복해서 Note 뿌리기
 
   const filteringPosts = useMemo(() => {
     if (!search) return allPosts;
@@ -27,10 +23,6 @@ function List() {
     setSearch(note);
   };
 
-  if (!allPosts || (allPosts.length === 0 && search === "")) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <>
       <div className="list">
@@ -42,9 +34,9 @@ function List() {
             filteringPosts.map((post) => {
               return (
                 <Note
-                  poTit={post.title}
-                  poCon={post.content}
-                  poId={post.id}
+                  title={post.title}
+                  content={post.content}
+                  id={post.id}
                   key={post.code}
                 />
               );
